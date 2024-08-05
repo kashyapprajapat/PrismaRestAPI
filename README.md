@@ -24,7 +24,7 @@ This api is learning purpose only and it 's tech stack is below
 ![Database](livedemoimage/SupabseDiagram.png)
 
 
-### Docker Image url --->>> 
+### Docker Image url --->>> [prisma_supabase_restapi](https://hub.docker.com/repositories/kashyap14112003)
 
 
 ## Contributing
