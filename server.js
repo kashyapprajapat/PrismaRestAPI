@@ -1,6 +1,8 @@
 import express, { json } from "express";
 import "dotenv/config";
 import rateLimit from "express-rate-limit";
+import swaggerUi from "swagger-ui-express";
+import swaggerDocument from "./swagger.json" assert { type: 'json' };
 
 const app = express();
 const PORT = process.env.PORT || 7000;
@@ -23,10 +25,16 @@ app.get("/", (req, res) => {
         <div style="text-align: center;">
           <p style="font-size:50px"> Backend 🗄️ is completely Working :) 🎉 </p>
           <p style="font-size:35px">Backend Technology : Express + Prisma 🔺 + Supabase ⚡</p>
+          <p style="font-size:35px">For API Documentation hit <a href="/docs">/docs</a></p>
         </div>
       </div>
     `);
 });
+
+// Serve Swagger UI
+app.use("/docs", swaggerUi.serve, swaggerUi.setup(swaggerDocument));
+
+
 import Routes from "./routes/index.js";
 app.use(Routes);
 
