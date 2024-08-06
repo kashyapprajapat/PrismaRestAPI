@@ -6,7 +6,7 @@
         "description": "API documentation for Prisma CRUD operations."
     },
     "schemes": ["http", "https"],
-    "host": ["localhost:7000","https://prismarestapi.onrender.com/"],
+    "host": ["localhost:7000","https://prismarestapi.onrender.com"],
     "basePath": "/",
     "paths": {
         "/docs": {

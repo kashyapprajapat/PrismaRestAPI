@@ -25,7 +25,8 @@ This api is learning purpose only and it 's tech stack is below
 ### Database (Table) Diagram
 ![Database](livedemoimage/SupabseDiagram.png)
 
-
+### Api Docs
+![ApiDocs](livedemoimage/Apidocs.png)
 
 
 ## Contributing
